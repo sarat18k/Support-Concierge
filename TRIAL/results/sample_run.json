@@ -1,0 +1,1219 @@
+{
+  "run_at": "2026-08-21T12:51:37+00:00",
+  "model": "gpt-4o-mini",
+  "ticket_count": 18,
+  "tickets": [
+    {
+      "id": "TCK-1001",
+      "subject": "Question about my invoice",
+      "from_name": "Maria Chen",
+      "from_email": "maria.chen@example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "billing",
+      "composite_confidence": 0.95,
+      "policy_flags": [
+        "money_involved"
+      ],
+      "decision_rationale": "Human stays in the loop. Category=billing, composite=0.95, policy_flags=['money_involved']. Auto-resolve is forbidden (human must stay in the loop): money_involved.",
+      "classification": {
+        "category": "billing",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is inquiring about an increase in their invoice amount, which falls under billing."
+      },
+      "extraction": {
+        "product_area": "billing",
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [
+          "$12"
+        ],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": true,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer is inquiring about an invoice discrepancy, indicating a financial concern."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [
+          "money_involved"
+        ],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): money_involved."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.95,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "money_involved"
+        ],
+        "rationale": "Human stays in the loop. Category=billing, composite=0.95, policy_flags=['money_involved']. Auto-resolve is forbidden (human must stay in the loop): money_involved."
+      },
+      "draft": {
+        "body": "Hi Maria,\n\nThank you for reaching out regarding your invoice. I understand that you noticed an increase of $12 this month, and I can help you with that. To assist you better, could you please provide any specific details about the charges or services that seem different from your usual invoice? This will help us identify the reason for the increase.\n\nLooking forward to your response.\n\nBest regards,\nCorvus Support",
+        "template_used": null,
+        "language": "en",
+        "confidence": 0.9,
+        "rationale": "The response acknowledges the customer's concern about the invoice increase, asks for additional details to assist further, and maintains a professional tone."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1002",
+      "subject": "Export button not working",
+      "from_name": "Dev Patel",
+      "from_email": "dev.patel@example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "bug",
+      "composite_confidence": 0.95,
+      "policy_flags": [],
+      "decision_rationale": "Human stays in the loop. Category=bug, composite=0.95, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): bug.",
+      "classification": {
+        "category": "bug",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The ticket describes a specific issue with the 'Export to CSV' functionality not working after an update, indicating a bug in the product."
+      },
+      "extraction": {
+        "product_area": "reports",
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [
+          "Chrome",
+          "Mac"
+        ],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The ticket describes a technical issue with the export functionality in the reports area, with no mention of money, refunds, or legal concerns."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): bug."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.95,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Human stays in the loop. Category=bug, composite=0.95, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): bug."
+      },
+      "draft": {
+        "body": "Hi Dev,\n\nThank you for reaching out about the issue with the 'Export to CSV' button on the Reports page. I understand how frustrating it can be when features don\u2019t work as expected, especially after an update.\n\nTo assist you further, could you please provide a few additional details? Specifically, it would be helpful to know if you have tried clearing your browser cache or using a different browser to see if the issue persists. Additionally, if you could let us know the version of Chrome you are using, that would be great.\n\nOnce I have this information, I can escalate the issue for further investigation.\n\nThank you for your patience!\n\nBest regards,\nCorvus Support",
+        "template_used": null,
+        "language": "en",
+        "confidence": 0.95,
+        "rationale": "The response acknowledges the customer's issue, asks for additional information to assist further, and maintains a professional tone."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1003",
+      "subject": "Dark mode?",
+      "from_name": "Sam Okafor",
+      "from_email": "sam.okafor@example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "feature_request",
+      "composite_confidence": 0.8,
+      "policy_flags": [],
+      "decision_rationale": "Human stays in the loop. Category=feature_request, composite=0.80, policy_flags=['none']. Category feature_request is eligible for auto-resolve; no money/legal/security flags.",
+      "classification": {
+        "category": "feature_request",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is asking for a new functionality (dark mode) which falls under the feature request category."
+      },
+      "extraction": {
+        "product_area": "ui",
+        "urgency": "low",
+        "sentiment": "positive",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [
+          "feature request"
+        ],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The ticket is a feature request for dark mode, indicating a positive sentiment and low urgency."
+      },
+      "policy": {
+        "allow_auto_resolve": true,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Category feature_request is eligible for auto-resolve; no money/legal/security flags."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.8,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "multi_intent": -0.15,
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Human stays in the loop. Category=feature_request, composite=0.80, policy_flags=['none']. Category feature_request is eligible for auto-resolve; no money/legal/security flags."
+      },
+      "draft": {
+        "body": "Hi Sam,\n\nThank you for reaching out! We appreciate your interest in a dark mode feature. Many users have expressed a desire for this option, especially for late-night work sessions. While I can't provide specific timelines or details about upcoming features, I can assure you that your feedback is valuable and will be considered by our development team.\n\nIf you have any other suggestions or specific features you\u2019d like to see, please feel free to share!\n\nBest regards,\nCorvus Support",
+        "template_used": null,
+        "language": "en",
+        "confidence": 0.95,
+        "rationale": "The response acknowledges the customer's request for a dark mode, expresses appreciation for their feedback, and informs them that their suggestion will be considered. It maintains a positive tone and invites further suggestions, aligning with the customer's positive sentiment."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1004",
+      "subject": "Can't log in",
+      "from_name": "Priya Nair",
+      "from_email": "priya.nair@example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "account_access",
+      "composite_confidence": 0.95,
+      "policy_flags": [],
+      "decision_rationale": "Human stays in the loop. Category=account_access, composite=0.95, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): account_access.",
+      "classification": {
+        "category": "account_access",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is unable to log in and is specifically requesting help with receiving a password reset email, which falls under account access."
+      },
+      "extraction": {
+        "product_area": "auth",
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The user is experiencing a login issue and is requesting assistance with password reset, indicating a need for support in the authentication area."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): account_access."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.95,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Human stays in the loop. Category=account_access, composite=0.95, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): account_access."
+      },
+      "draft": {
+        "body": "Hi Priya,\n\nThank you for reaching out. I understand that you're having trouble receiving the password reset email for your account. This can be frustrating, and I'm here to help.\n\nTo assist you further, could you please confirm the email address associated with your account? Additionally, if you could let us know if you have tried any other methods to reset your password, that would be helpful.\n\nOnce I have this information, I can guide you on the next steps to regain access to your account.\n\nLooking forward to your response.\n\nBest regards,\nCorvus Support",
+        "template_used": null,
+        "language": "en",
+        "confidence": 0.95,
+        "rationale": "The response acknowledges the customer's issue, asks for necessary information to assist further, and maintains a professional tone."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1005",
+      "subject": "This is the third time I've been overcharged",
+      "from_name": "James Whitfield",
+      "from_email": "j.whitfield@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "billing",
+      "composite_confidence": 0.75,
+      "policy_flags": [
+        "money_involved",
+        "cancellation_threat",
+        "churn_risk",
+        "money_plus_multi_intent",
+        "same_day_ultimatum"
+      ],
+      "decision_rationale": "Hard policy requires a human: money_involved, cancellation_threat, churn_risk, money_plus_multi_intent, same_day_ultimatum.",
+      "classification": {
+        "category": "billing",
+        "language": "en",
+        "multi_intent": true,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is reporting being overcharged and expresses intent to cancel if the issue is not resolved, indicating a billing issue and a churn risk."
+      },
+      "extraction": {
+        "product_area": "billing",
+        "urgency": "high",
+        "sentiment": "angry",
+        "identifiers": [
+          "Pro plan",
+          "Basic"
+        ],
+        "is_followup": false,
+        "secondary_intents": [
+          "cancellation threat"
+        ],
+        "money_mentioned": true,
+        "refund_requested": false,
+        "cancellation_threatened": true,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer mentions being overcharged and expresses frustration about billing issues, indicating urgency and a threat to cancel."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "money_involved",
+          "cancellation_threat",
+          "churn_risk",
+          "money_plus_multi_intent",
+          "same_day_ultimatum"
+        ],
+        "rationale": "Hard policy requires a human: money_involved, cancellation_threat, churn_risk, money_plus_multi_intent, same_day_ultimatum."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.75,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "multi_intent": -0.15
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "money_involved",
+          "cancellation_threat",
+          "churn_risk",
+          "money_plus_multi_intent",
+          "same_day_ultimatum"
+        ],
+        "rationale": "Hard policy requires a human: money_involved, cancellation_threat, churn_risk, money_plus_multi_intent, same_day_ultimatum."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1006",
+      "subject": "Two issues",
+      "from_name": "Alicia Fernandez",
+      "from_email": "alicia.f@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "billing",
+      "composite_confidence": 0.75,
+      "policy_flags": [
+        "money_involved",
+        "money_plus_multi_intent"
+      ],
+      "decision_rationale": "Hard policy requires a human: money_involved, money_plus_multi_intent.",
+      "classification": {
+        "category": "billing",
+        "language": "en",
+        "multi_intent": true,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The ticket contains two distinct issues: a bug related to the dashboard timing out and a billing issue regarding being charged twice. The billing issue is considered riskier."
+      },
+      "extraction": {
+        "product_area": "dashboard",
+        "urgency": "medium",
+        "sentiment": "negative",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [
+          "check charges"
+        ],
+        "money_mentioned": true,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The user reports a technical issue with the dashboard and mentions being charged twice, indicating a billing concern."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "money_involved",
+          "money_plus_multi_intent"
+        ],
+        "rationale": "Hard policy requires a human: money_involved, money_plus_multi_intent."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.75,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "multi_intent": -0.15
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "money_involved",
+          "money_plus_multi_intent"
+        ],
+        "rationale": "Hard policy requires a human: money_involved, money_plus_multi_intent."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1007",
+      "subject": "No puedo acceder a mi cuenta",
+      "from_name": "Carlos Ibanez",
+      "from_email": "carlos.ibanez@example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "account_access",
+      "composite_confidence": 0.95,
+      "policy_flags": [],
+      "decision_rationale": "Human stays in the loop. Category=account_access, composite=0.95, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): account_access.",
+      "classification": {
+        "category": "account_access",
+        "language": "es",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is unable to log in to their account and has attempted to reset their password multiple times, indicating a clear issue with account access."
+      },
+      "extraction": {
+        "product_area": "auth",
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The user is experiencing login issues and has attempted to reset their password multiple times, indicating a need for assistance with account access."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): account_access."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.95,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Human stays in the loop. Category=account_access, composite=0.95, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): account_access."
+      },
+      "draft": {
+        "body": "Hola Carlos,\n\nLamentamos que est\u00e9s teniendo problemas para acceder a tu cuenta. Entendemos lo frustrante que puede ser. Para poder ayudarte mejor, \u00bfpodr\u00edas confirmarnos si est\u00e1s recibiendo alg\u00fan mensaje de error espec\u00edfico al intentar iniciar sesi\u00f3n? Adem\u00e1s, si has intentado acceder desde diferentes dispositivos o navegadores, eso tambi\u00e9n ser\u00eda \u00fatil saberlo.\n\nUna vez que tengamos esta informaci\u00f3n, podremos investigar m\u00e1s a fondo y ofrecerte la mejor soluci\u00f3n posible.\n\nGracias por tu paciencia.\n\nAtentamente,\nCorvus Support",
+        "template_used": null,
+        "language": "es",
+        "confidence": 0.9,
+        "rationale": "The response acknowledges the customer's issue, asks for additional information to assist further, and maintains a professional tone in Spanish."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1008",
+      "subject": "Grow your Instagram followers FAST",
+      "from_name": "GrowthBot",
+      "from_email": "promo@social-growth-tools.example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "spam",
+      "composite_confidence": 0.8,
+      "policy_flags": [],
+      "decision_rationale": "Human stays in the loop. Category=spam, composite=0.80, policy_flags=['none']. Category spam is eligible for auto-resolve; no money/legal/security flags.",
+      "classification": {
+        "category": "spam",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 1.0,
+        "rationale": "The content is promotional and unrelated to customer support."
+      },
+      "extraction": {
+        "product_area": "social media",
+        "urgency": "low",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [
+          "free trial",
+          "increase followers"
+        ],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.8,
+        "rationale": "The ticket is a promotional message offering a free trial service to increase social media followers, with no mention of money, refunds, or account deletion."
+      },
+      "policy": {
+        "allow_auto_resolve": true,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Category spam is eligible for auto-resolve; no money/legal/security flags."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.8,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "multi_intent": -0.15,
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Human stays in the loop. Category=spam, composite=0.80, policy_flags=['none']. Category spam is eligible for auto-resolve; no money/legal/security flags."
+      },
+      "draft": {
+        "body": "Hello,\n\nThank you for reaching out. We appreciate your interest in helping us grow our social media presence. However, we are currently not looking to engage with promotional offers or services at this time.\n\nIf you have any specific questions or need further assistance, please feel free to reach out. \n\nBest regards,\nCorvus Support",
+        "template_used": null,
+        "language": "en",
+        "confidence": 0.9,
+        "rationale": "The response acknowledges the promotional email, politely declines the offer, and invites further communication if needed, matching the neutral sentiment and language."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1009",
+      "subject": "it's broken",
+      "from_name": "Unknown User",
+      "from_email": "quickuser99@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "bug",
+      "composite_confidence": 0.25,
+      "policy_flags": [],
+      "decision_rationale": "Composite confidence 0.25 is below draft threshold 0.55, text is vague. Escalating rather than guessing.",
+      "classification": {
+        "category": "bug",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.7,
+        "rationale": "The user indicates that something is broken, which suggests a bug in the product."
+      },
+      "extraction": {
+        "product_area": null,
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.5,
+        "rationale": "The ticket contains minimal information, indicating a general request for help without specific details."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): bug."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.25,
+        "model_confidence": 0.6,
+        "heuristic_deltas": {
+          "vague": -0.35
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Composite confidence 0.25 is below draft threshold 0.55, text is vague. Escalating rather than guessing."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1010",
+      "subject": "Data deletion request under GDPR",
+      "from_name": "Elena Kowalski",
+      "from_email": "elena.k@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "legal_privacy",
+      "composite_confidence": 1.0,
+      "policy_flags": [
+        "account_deletion",
+        "legal_or_regulatory"
+      ],
+      "decision_rationale": "Hard policy requires a human: account_deletion, legal_or_regulatory.",
+      "classification": {
+        "category": "legal_privacy",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 1.0,
+        "rationale": "The ticket is a clear request for deletion of personal data under GDPR, which falls under legal and privacy concerns."
+      },
+      "extraction": {
+        "product_area": null,
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": true,
+        "legal_language": true,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer explicitly requests deletion of personal data under GDPR, indicating a legal requirement."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "account_deletion",
+          "legal_or_regulatory"
+        ],
+        "rationale": "Hard policy requires a human: account_deletion, legal_or_regulatory."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 1.0,
+        "model_confidence": 0.95,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "account_deletion",
+          "legal_or_regulatory"
+        ],
+        "rationale": "Hard policy requires a human: account_deletion, legal_or_regulatory."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1011",
+      "subject": "Refund please",
+      "from_name": "Tom Reilly",
+      "from_email": "tom.reilly@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "billing",
+      "composite_confidence": 0.95,
+      "policy_flags": [
+        "refund_requested",
+        "money_involved"
+      ],
+      "decision_rationale": "Hard policy requires a human: refund_requested, money_involved.",
+      "classification": {
+        "category": "billing",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is requesting a refund for an annual payment, which falls under the billing category."
+      },
+      "extraction": {
+        "product_area": null,
+        "urgency": "medium",
+        "sentiment": "negative",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": true,
+        "refund_requested": true,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer explicitly requests a refund for an annual payment and mentions they decided not to continue using the service."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "refund_requested",
+          "money_involved"
+        ],
+        "rationale": "Hard policy requires a human: refund_requested, money_involved."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.95,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "refund_requested",
+          "money_involved"
+        ],
+        "rationale": "Hard policy requires a human: refund_requested, money_involved."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1012",
+      "subject": "Close my account",
+      "from_name": "Naomi Baptiste",
+      "from_email": "naomi.b@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "cancellation",
+      "composite_confidence": 0.95,
+      "policy_flags": [
+        "account_deletion",
+        "cancellation_threat"
+      ],
+      "decision_rationale": "Hard policy requires a human: account_deletion, cancellation_threat.",
+      "classification": {
+        "category": "cancellation",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is requesting to close their account and delete all associated data, which falls under the cancellation category."
+      },
+      "extraction": {
+        "product_area": null,
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": true,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer explicitly requests to permanently delete their account and all associated data."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "account_deletion",
+          "cancellation_threat"
+        ],
+        "rationale": "Hard policy requires a human: account_deletion, cancellation_threat."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.95,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "account_deletion",
+          "cancellation_threat"
+        ],
+        "rationale": "Hard policy requires a human: account_deletion, cancellation_threat."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1013",
+      "subject": "Refund needed",
+      "from_name": "Ryan Doyle",
+      "from_email": "ryan.doyle@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "billing",
+      "composite_confidence": 0.55,
+      "policy_flags": [
+        "refund_requested",
+        "money_involved",
+        "prompt_injection"
+      ],
+      "decision_rationale": "Hard policy requires a human: refund_requested, money_involved, prompt_injection.",
+      "classification": {
+        "category": "billing",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": true,
+        "confidence": 0.9,
+        "rationale": "The customer is requesting a refund, which falls under the billing category. The presence of a system note attempting to override instructions indicates prompt injection."
+      },
+      "extraction": {
+        "product_area": null,
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": true,
+        "refund_requested": true,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer explicitly requested a refund for last month, indicating a financial transaction."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "refund_requested",
+          "money_involved",
+          "prompt_injection"
+        ],
+        "rationale": "Hard policy requires a human: refund_requested, money_involved, prompt_injection."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.55,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "injection": -0.4,
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "refund_requested",
+          "money_involved",
+          "prompt_injection"
+        ],
+        "rationale": "Hard policy requires a human: refund_requested, money_involved, prompt_injection."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1014",
+      "subject": "Export button not working (again)",
+      "from_name": "Dev Patel",
+      "from_email": "dev.patel@example.com",
+      "action": "draft_for_review",
+      "status": "pending_review",
+      "category": "bug",
+      "composite_confidence": 0.9,
+      "policy_flags": [],
+      "decision_rationale": "Human stays in the loop. Category=bug, composite=0.90, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): bug.",
+      "classification": {
+        "category": "bug",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is reporting a recurring issue with the CSV export functionality on the Reports page, indicating that something in the product is broken."
+      },
+      "extraction": {
+        "product_area": "reports",
+        "urgency": "medium",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": true,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The user is following up on a previously reported issue regarding the CSV export functionality, indicating a medium urgency but no financial or legal concerns."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): bug."
+      },
+      "decision": {
+        "action": "draft_for_review",
+        "composite_confidence": 0.9,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "followup": -0.05,
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Human stays in the loop. Category=bug, composite=0.90, policy_flags=['none']. Auto-resolve is forbidden (human must stay in the loop): bug."
+      },
+      "draft": {
+        "body": "Hi Dev,\n\nThank you for your follow-up regarding the CSV export issue on the Reports page. I understand that this has been a recurring problem, and I apologize for the inconvenience it has caused.\n\nTo assist you further, could you please provide any additional details about the issue? Specifically, it would be helpful to know if you receive any error messages or if the export simply does not initiate. This information will help us investigate the problem more effectively.\n\nThank you for your patience, and I look forward to your response.\n\nBest regards,\nCorvus Support",
+        "template_used": null,
+        "language": "en",
+        "confidence": 0.9,
+        "rationale": "The response acknowledges the customer's follow-up, expresses understanding of the issue, and requests additional information to assist in resolving the problem."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1015",
+      "subject": "Possible security issue",
+      "from_name": "Anonymous Researcher",
+      "from_email": "sec.researcher@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "security",
+      "composite_confidence": 0.8,
+      "policy_flags": [
+        "security_report"
+      ],
+      "decision_rationale": "Hard policy requires a human: security_report.",
+      "classification": {
+        "category": "security",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The ticket reports a potential security vulnerability related to unauthorized access to another company's dashboard, which is a serious concern."
+      },
+      "extraction": {
+        "product_area": "dashboard",
+        "urgency": "high",
+        "sentiment": "neutral",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [
+          "report security issue"
+        ],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": true,
+        "confidence": 0.9,
+        "rationale": "The ticket mentions a potential security issue related to accessing another company's dashboard, indicating a possible vulnerability."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "security_report"
+        ],
+        "rationale": "Hard policy requires a human: security_report."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.8,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "multi_intent": -0.15,
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "security_report"
+        ],
+        "rationale": "Hard policy requires a human: security_report."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1016",
+      "subject": "Just wanted to say thanks",
+      "from_name": "Grace Lindqvist",
+      "from_email": "grace.l@example.com",
+      "action": "auto_resolve",
+      "status": "closed",
+      "category": "gratitude",
+      "composite_confidence": 1.0,
+      "policy_flags": [],
+      "decision_rationale": "Category gratitude is auto-eligible, policy allows auto-resolve, and composite confidence 1.00 >= 0.85.",
+      "classification": {
+        "category": "gratitude",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 1.0,
+        "rationale": "The ticket expresses gratitude for support received and indicates no further action is needed."
+      },
+      "extraction": {
+        "product_area": null,
+        "urgency": "low",
+        "sentiment": "positive",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The ticket expresses gratitude for support received, indicating a positive sentiment and no requests for action."
+      },
+      "policy": {
+        "allow_auto_resolve": true,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Category gratitude is eligible for auto-resolve; no money/legal/security flags."
+      },
+      "decision": {
+        "action": "auto_resolve",
+        "composite_confidence": 1.0,
+        "model_confidence": 0.95,
+        "heuristic_deltas": {
+          "clear_single_intent": 0.05
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Category gratitude is auto-eligible, policy allows auto-resolve, and composite confidence 1.00 >= 0.85."
+      },
+      "draft": {
+        "body": "Hi Grace,\n\nThank you for taking the time to write \u2014 it means a lot to the team. No further action is needed on your side. We're glad we could help.\n\nBest,\nCorvus Support",
+        "template_used": "gratitude",
+        "language": "en",
+        "confidence": 0.93,
+        "rationale": "Canned thanks reply; safe to auto-close."
+      },
+      "failures": []
+    },
+    {
+      "id": "TCK-1017",
+      "subject": "Re: Re: FWD: issue",
+      "from_name": "Unknown",
+      "from_email": "mobile.forward@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "bug",
+      "composite_confidence": 0.55,
+      "policy_flags": [],
+      "decision_rationale": "Composite confidence 0.55 is below draft threshold 0.55, text is garbled. Escalating rather than guessing.",
+      "classification": {
+        "category": "bug",
+        "language": "en",
+        "multi_intent": false,
+        "prompt_injection": false,
+        "confidence": 0.8,
+        "rationale": "The customer is reporting an issue with a blank screen when trying to open a report page, indicating a bug in the product."
+      },
+      "extraction": {
+        "product_area": "reports",
+        "urgency": "medium",
+        "sentiment": "negative",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [],
+        "money_mentioned": false,
+        "refund_requested": false,
+        "cancellation_threatened": false,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.8,
+        "rationale": "The user is experiencing an issue with a report page showing a blank screen, indicating a problem with the product area related to reports."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": false,
+        "flags": [],
+        "rationale": "Auto-resolve is forbidden (human must stay in the loop): bug."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.55,
+        "model_confidence": 0.8,
+        "heuristic_deltas": {
+          "garbled": -0.25
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [],
+        "rationale": "Composite confidence 0.55 is below draft threshold 0.55, text is garbled. Escalating rather than guessing."
+      },
+      "draft": null,
+      "failures": []
+    },
+    {
+      "id": "TCK-1018",
+      "subject": "Considering switching",
+      "from_name": "Faisal Rahman",
+      "from_email": "faisal.rahman@example.com",
+      "action": "escalate",
+      "status": "escalated",
+      "category": "churn_risk",
+      "composite_confidence": 0.75,
+      "policy_flags": [
+        "money_involved",
+        "cancellation_threat",
+        "churn_risk",
+        "money_plus_multi_intent"
+      ],
+      "decision_rationale": "Hard policy requires a human: money_involved, cancellation_threat, churn_risk, money_plus_multi_intent.",
+      "classification": {
+        "category": "churn_risk",
+        "language": "en",
+        "multi_intent": true,
+        "prompt_injection": false,
+        "confidence": 0.9,
+        "rationale": "The customer is expressing concern about pricing changes and is considering switching to a competitor, which indicates a churn risk. They also ask for an explanation of the billing change, which relates to billing."
+      },
+      "extraction": {
+        "product_area": "billing",
+        "urgency": "medium",
+        "sentiment": "negative",
+        "identifiers": [],
+        "is_followup": false,
+        "secondary_intents": [
+          "explain billing change",
+          "inquire about flexibility"
+        ],
+        "money_mentioned": true,
+        "refund_requested": false,
+        "cancellation_threatened": true,
+        "deletion_requested": false,
+        "legal_language": false,
+        "security_report": false,
+        "confidence": 0.9,
+        "rationale": "The customer mentions a price increase and expresses consideration of switching to a competitor, indicating dissatisfaction with current pricing."
+      },
+      "policy": {
+        "allow_auto_resolve": false,
+        "force_escalate": true,
+        "flags": [
+          "money_involved",
+          "cancellation_threat",
+          "churn_risk",
+          "money_plus_multi_intent"
+        ],
+        "rationale": "Hard policy requires a human: money_involved, cancellation_threat, churn_risk, money_plus_multi_intent."
+      },
+      "decision": {
+        "action": "escalate",
+        "composite_confidence": 0.75,
+        "model_confidence": 0.9,
+        "heuristic_deltas": {
+          "multi_intent": -0.15
+        },
+        "thresholds": {
+          "auto_resolve_min": 0.85,
+          "draft_min": 0.55
+        },
+        "policy_flags": [
+          "money_involved",
+          "cancellation_threat",
+          "churn_risk",
+          "money_plus_multi_intent"
+        ],
+        "rationale": "Hard policy requires a human: money_involved, cancellation_threat, churn_risk, money_plus_multi_intent."
+      },
+      "draft": null,
+      "failures": []
+    }
+  ]
+}
